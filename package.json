@@ -1,6 +1,6 @@
 {
   "name": "@souvik1991/react-lazy-load-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Lazy Load Image using React Hook plug-in with placeholder image option when in Viewport",
   "main": "./lib/LazyLoadImage.js",
   "scripts": {
