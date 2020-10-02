@@ -142,7 +142,7 @@ LazyLoadImage.propTypes = {
 
 LazyLoadImage.defaultProps = {
     alt: 'Lazy loaded image',
-    debounceDelay: 500
+    debounceDelay: 500,
 };
 
 export default LazyLoadImage;
