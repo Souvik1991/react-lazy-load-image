@@ -43,8 +43,9 @@ const getElementPosition = (element) => {
 @param {domNode} element : REQUIRED : (Dom node on which the style will be searched)
 */
 export const findScrollElement = (element) => {
-    const {body, documentElement} = document;
-    if(element === body || element === documentElement || !element.parentNode) return window;
+    if(
+        element === document.body || element === document.documentElement || !element.parentNode
+    ) return window;
     else if(isScrollable(element)) return element;
 
     return findScrollElement(element.parentNode)

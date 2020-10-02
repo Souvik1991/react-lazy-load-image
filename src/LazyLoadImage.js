@@ -47,7 +47,7 @@ const LazyLoadImage = (props) => {
             }
         };
         
-        // Handle image load issue and log into console
+        // handle failure
         newImg.onerror = () => {
             console.log(src, "couldn't be loaded");
         };
@@ -141,7 +141,7 @@ LazyLoadImage.propTypes = {
 };
 
 LazyLoadImage.defaultProps = {
-    alt: 'Lazy load image',
+    alt: 'Lazy loaded image',
     debounceDelay: 500
 };
 
