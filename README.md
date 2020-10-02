@@ -22,7 +22,23 @@ npm install @souvik1991/react-lazy-load-image --save
 import React from 'react';
 import LazyLoadImage from "@souvik1991/react-lazy-load-image";
 
-
+const DemoComponent = () => {
+    const mediaUrl = 'https://apod.nasa.gov/apod/image/2010/IMG_7493Colour.jpg';
+    return (
+        <LazyLoadImage
+            className="media"
+            alt="post pic"
+            placeholder={require('../../static/images/gray.svg')}
+            src={mediaUrl}
+            onContentLoaded={() => {
+                console.log('I am loaded');
+            }}
+            onContentVisible={() => {
+                console.log('I am visible');
+            }}
+        ></LazyLoadImage>
+    )
+}
 ```
 
 ## Props

@@ -14,7 +14,6 @@ const config = {
             amd: 'react-dom',
         },
     },
-    devtool: 'source-map',
     module: {
         rules: [{ 
             test: /\.js?$/,

@@ -60,7 +60,7 @@ export const findScrollElement = (element) => {
 */
 export const isInViewPort = (element, container = undefined) => {
     // The element is hidden
-    if(element.offsetParent === null){ 
+    if(!element || element.offsetParent === null){ 
         return false;
     }
 
