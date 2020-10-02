@@ -4,7 +4,7 @@
   "description": "React Lazy Load Image using React Hook plug-in with placeholder image option when in Viewport",
   "main": "./lib/LazyLoadImage.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "build": "npm run build:lib && npm run build:umd:min",
     "build:lib": "babel src --out-dir lib",
     "build:umd": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.js --config webpack.config.dev.js",
     "build:umd:min": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.min.js --config webpack.config.prod.js",
