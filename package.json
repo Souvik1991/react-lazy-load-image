@@ -1,5 +1,5 @@
 {
-  "name": "react-image-lazy-load",
+  "name": "react-lazy-load-image",
   "version": "1.0.0",
   "description": "React Lazy Load Image using React Hook plug-in with placeholder image option when in Viewport",
   "main": "./lib/LazyLoadImage.js",
@@ -52,5 +52,9 @@
   },
   "dependencies": {
     "debounce-promise": "^3.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   }
 }
