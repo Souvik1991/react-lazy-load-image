@@ -1,0 +1,52 @@
+{
+  "name": "react-image-lazy-load",
+  "version": "1.0.0",
+  "description": "React Lazy Load Image using Hook plug-in with placeholder image option",
+  "main": "./lib/LazyLoadImage.js",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "build:lib": "babel src --out-dir lib",
+    "build:umd": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.js --config webpack.config.dev.js",
+    "build:umd:min": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.min.js --config webpack.config.prod.js",
+    "clean": "rimraf lib dist",
+    "lint": "eslint src/LazyLoadImage.js",
+    "prepublish": "npm run clean && npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Souvik1991/react-lazy-load-image.git"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "reactjs",
+    "react-component",
+    "load",
+    "lazy",
+    "lazyload"
+  ],
+  "author": "Souvik Maity <souvik.maity200@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.10.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "debounce-promise": "^3.1.2"
+  }
+}
