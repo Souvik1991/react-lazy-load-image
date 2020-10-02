@@ -1,5 +1,5 @@
 {
-  "name": "react-lazy-load-image",
+  "name": "@souvik1991/react-lazy-load-image",
   "version": "1.0.0",
   "description": "React Lazy Load Image using React Hook plug-in with placeholder image option when in Viewport",
   "main": "./lib/LazyLoadImage.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Souvik1991/react-lazy-load-image.git"
+    "url": "git+https://github.com/Souvik1991/react-lazy-load-image.git"
   },
   "files": [
     "dist",
@@ -56,5 +56,12 @@
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Souvik1991/react-lazy-load-image/issues"
+  },
+  "homepage": "https://github.com/Souvik1991/react-lazy-load-image#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
