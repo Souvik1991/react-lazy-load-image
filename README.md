@@ -9,7 +9,6 @@ It automatically detects the container which is scrollable and binds scroll even
 
 [![build status](https://img.shields.io/travis/Souvik1991/react-lazy-load-image.svg?style=flat-square)](https://travis-ci.org/github/Souvik1991/react-lazy-load-image)
 [![dependency status](https://david-dm.org/Souvik1991/react-lazy-load-image.svg?style=flat-square)](https://david-dm.org/Souvik1991/react-lazy-load-image)
-[![npm downloads](https://img.shields.io/npm/dm/react-lazy-load-image.svg?style=flat-square)](https://www.npmjs.com/package/@souvik1991/react-lazy-load-image)
 
 ## Installation
 React Lazy Load requires **React 16.13 or later.**
