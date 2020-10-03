@@ -9,9 +9,10 @@
     "build:umd": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.js --config webpack.config.dev.js",
     "build:umd:min": "webpack src/LazyLoadImage.js -o dist/LazyLoadImage.min.js --config webpack.config.prod.js",
     "clean": "rimraf lib dist",
-    "lint": "eslint src/LazyLoadImage.js",
+    "lint": "eslint ./src",
     "prepublish": "npm run clean && npm run build",
-    "test": "jest"
+    "test": "jest --config=jest.config.js",
+    "coverage": "jest --coverage --config=jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -39,11 +40,15 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.10.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.21.2",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "jest-cli": "^26.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

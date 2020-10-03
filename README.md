@@ -11,10 +11,13 @@ It automatically detects the container which is scrollable and binds scroll even
 [![dependency status](https://david-dm.org/Souvik1991/react-lazy-load-image.svg?style=flat-square)](https://david-dm.org/Souvik1991/react-lazy-load-image)
 
 ## Installation
-React Lazy Load requires **React 16.13 or later.**
+Lazy Load Image Component using React Hook requires **React 16.13 or later.**
 ```
 npm install @souvik1991/react-lazy-load-image --save
 ```
+
+## Live Demo 
+* [Demo](https://p4ex1.csb.app/)
 
 ## Usage
 

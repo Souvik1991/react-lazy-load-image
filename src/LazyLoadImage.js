@@ -64,7 +64,7 @@ const LazyLoadImage = (props) => {
     // debounceDelay variable value default is 500ms 
     const handleScrollResize = useCallback(
         debounce(() => {
-            if(isVisible) return;
+            if(isVisible || componentUnmountedRef.current) return;
             const inViewPort = isInViewPort(image.current, scrollNode.current);
             if(inViewPort && !componentUnmountedRef.current){
                 setIsVisible(true);
