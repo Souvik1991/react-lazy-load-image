@@ -30,6 +30,9 @@ describe("LazyLoadImage Compoenent >> ", () => {
                 alt={'Test Image Load'}
                 placeholder={'placeholder.jpg'}
                 src={mediaUrl[index]}
+                onError={() => {
+                    console.log('Image load error')
+                }}
                 onContentLoaded={() => {
                     console.log('Image loaded')
                 }}

@@ -12,6 +12,7 @@ const LazyLoadImage = (props) => {
         placeholder,
         src,
         alt,
+        onError,
         onContentLoaded,
         onContentVisible,
         debounceDelay
@@ -49,7 +50,12 @@ const LazyLoadImage = (props) => {
         
         // handle failure
         newImg.onerror = () => {
-            console.log(src, "couldn't be loaded");
+            if(!componentUnmountedRef.current){
+                setIsLoaded(true);
+                if(onError instanceof Function) setTimeout(() => {
+                    onError();
+                });
+            }
         };
         // console.log(src);
         newImg.src = src;
@@ -135,6 +141,7 @@ LazyLoadImage.propTypes = {
     placeholder: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     alt: PropTypes.string,
+    onError: PropTypes.func,
     onContentLoaded: PropTypes.func,
     onContentVisible: PropTypes.func,
     debounceDelay: PropTypes.number

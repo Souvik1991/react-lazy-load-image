@@ -33,6 +33,9 @@ const DemoComponent = () => {
             alt="post pic"
             placeholder={require('../../static/images/gray.svg')}
             src={mediaUrl}
+            onError={() => {
+                console.log('Unable to load the image')
+            }}
             onContentLoaded={() => {
                 console.log('I am loaded');
             }}
@@ -70,6 +73,11 @@ This is used to set the elements height even when it has no content.
 Type: `String|Number`
 
 This is used to set the elements width even when it has no content.
+
+### onError
+Type `Function`
+
+A callback function which will be called if it's fails to load the Image.
 
 ### onContentVisible
 Type `Function`
